@@ -1,0 +1,535 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,700');
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
+
+@font-face {
+    font-family: "Booter - Zero Zero";
+    src: url("Fonts/Booter - Zero Zero.woff") format("woff"),
+         url("Fonts/Booter - Zero Zero.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: Raleway;
+    color: #777;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    min-height: 100%;
+}
+
+
+
+
+
+.content-section {
+    margin: 1em;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 1.5em;
+}
+.section-header {
+    font-family: 'Architects Daughter', cursive;
+    font-weight: normal;
+    color: #333;
+    text-align: center;
+    font-size: 2.5em;
+}
+
+
+
+
+.btn {
+    text-align: center;
+    vertical-align: middle;
+    padding: .67em .67em;
+    cursor: pointer;
+}
+
+.btn-header {
+    margin: .5em 15% 2em 15%;
+    color: white;
+    border: 2px solid #2D9CDB;
+    background-color: rgba(255, 255, 255, .1);
+    border-radius: 0;
+    font-size: 1.5em;
+    font-weight: lighter;
+    padding-left: 2em;
+    padding-right: 2em;
+}
+
+.btn-header:hover {
+    background-color: rgba(255, 255, 255, .3);
+}
+
+.btn-play {
+    display: block;
+    margin: 0 auto;
+    color: #2D9CDB;
+    font-size: 4em;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    padding: 0;
+    text-align: center;
+}
+
+.btn-primary {
+    color: white;
+    background-color: #56CCF2;
+    border: none;
+    border-radius: .3em;
+    font-weight: bold;
+}
+
+.btn-primary:hover {
+    background-color: #2D9CDB;
+}
+
+.tour-row {
+    border-bottom: 1px solid black;
+    padding-bottom: 1em;
+    margin-bottom: 1em;
+}
+
+.tour-row:last-child {
+    border: none;
+}
+
+.tour-item {
+    display: inline-block;
+    padding-right: .5em;
+}
+
+.tour-date {
+    color: #555;
+    width: 11%;
+    font-weight: bold;
+}
+
+.tour-city {
+    width: 24%;
+}
+
+.tour-arena {
+    width: 42%;
+}
+
+.tour-btn {
+    max-width: 19%;
+}
+
+.shop-item {
+    margin: 30px;
+}
+
+.shop-item-title {
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.shop-item-image {
+    height: 250px;
+}
+.f{
+    
+    margin-left: 30px;
+    
+    ;
+
+    
+}
+.l{
+    background-color: royalblue;
+}
+.shop-item-details {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+}
+.shop-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.shop-item-price {
+    flex-grow: 1;
+    color: #333;
+}
+
+
+
+.cart-header {
+    font-weight: bold;
+    font-size: 1.25em;
+    color: #333;
+}
+
+.cart-column {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid black;
+    margin-right: 1.5em;
+    padding-bottom: 10px;
+    margin-top: 10px;
+}
+
+.cart-row {
+    display: flex;
+}
+
+.cart-item {
+    width: 45%;
+}
+
+.cart-price {
+    width: 20%;
+    font-size: 1.2em;
+    color: #333;
+}
+
+.cart-quantity {
+    width: 35%;
+}
+
+.cart-item-title {
+    color: #333;
+    margin-left: .5em;
+    font-size: 1.2em;
+}
+
+.cart-item-image {
+    width: 75px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.btn-danger {
+    color: white;
+    background-color: #EB5757;
+    border: none;
+    border-radius: .3em;
+    font-weight: bold;
+}
+
+.btn-danger:hover {
+    background-color: #CC4C4C;
+}
+
+.cart-quantity-input {
+    height: 34px;
+    width: 50px;
+    border-radius: 5px;
+    border: 1px solid #56CCF2;
+    background-color: #eee;
+    color: #333;
+    padding: 0;
+    text-align: center;
+    font-size: 1.2em;
+    margin-right: 25px;
+}
+
+.cart-row:last-child {
+    border-bottom: 1px solid black;
+}
+
+.cart-row:last-child .cart-column {
+    border: none;
+}
+
+.cart-total {
+    text-align: end;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.cart-total-title {
+    font-weight: bold;
+    font-size: 1.5em;
+    color: black;
+    margin-right: 20px;
+}
+
+.cart-total-price {
+    color: #333;
+    font-size: 1.1em;
+}
+.heartbox {
+    position: absolute;
+    
+    transform: translate(-50%, -50%)
+}
+
+svg {
+    cursor: pointer;
+    overflow: visible;
+    width: 60px;
+    margin: 0px
+
+}
+
+svg #heart {
+    transform-origin: center;
+    animation: animateHeartOut .3s linear forwards
+}
+
+svg #main-circ {
+    transform-origin: 29.5px 29.5px
+}
+
+.checkbox {
+    display: none
+}
+
+.checkbox:checked+label svg #heart {
+    transform: scale(0.2);
+    fill: #E2264D;
+    animation: animateHeart .3s linear forwards .25s
+}
+
+.checkbox:checked+label svg #main-circ {
+    transition: all 2s;
+    animation: animateCircle .3s linear forwards;
+    opacity: 1
+}
+
+.checkbox:checked+label svg #heartgroup1 {
+    opacity: 1;
+    transition: .1s all .3s
+}
+
+.checkbox:checked+label svg #heartgroup1 #heart1 {
+    transform: scale(0) translate(0, -30px);
+    transform-origin: 0 0 0;
+    transition: .5s transform .3s
+}
+
+.checkbox:checked+label svg #heartgroup1 #heart2 {
+    transform: scale(0) translate(10px, -50px);
+    transform-origin: 0 0 0;
+    transition: 1.5s transform .3s
+}
+
+.checkbox:checked+label svg #heartgroup2 {
+    opacity: 1;
+    transition: .1s all .3s
+}
+
+.checkbox:checked+label svg #heartgroup2 #heart1 {
+    transform: scale(0) translate(30px, -15px);
+    transform-origin: 0 0 0;
+    transition: .5s transform .3s
+}
+
+.checkbox:checked+label svg #heartgroup2 #heart2 {
+    transform: scale(0) translate(60px, -15px);
+    transform-origin: 0 0 0;
+    transition: 1.5s transform .3s
+}
+
+.checkbox:checked+label svg #heartgroup3 {
+    opacity: 1;
+    transition: .1s all .3s
+}
+
+.checkbox:checked+label svg #heartgroup3 #heart1 {
+    transform: scale(0) translate(30px, 0px);
+    transform-origin: 0 0 0;
+    transition: .5s transform .3s
+}
+
+.checkbox:checked+label svg #heartgroup3 #heart2 {
+    transform: scale(0) translate(60px, 10px);
+    transform-origin: 0 0 0;
+    transition: 1.5s transform .3s
+}
+
+.checkbox:checked+label svg #heartgroup4 {
+    opacity: 1;
+    transition: .1s all .3s
+}
+
+.checkbox:checked+label svg #heartgroup4 #heart1 {
+    transform: scale(0) translate(30px, 15px);
+    transform-origin: 0 0 0;
+    transition: .5s transform .3s
+}
+
+.checkbox:checked+label svg #heartgroup4 #heart2 {
+    transform: scale(0) translate(40px, 50px);
+    transform-origin: 0 0 0;
+    transition: 1.5s transform .3s
+}
+
+.checkbox:checked+label svg #heartgroup5 {
+    opacity: 1;
+    transition: .1s all .3s
+}
+
+.checkbox:checked+label svg #heartgroup5 #heart1 {
+    transform: scale(0) translate(-10px, 20px);
+    transform-origin: 0 0 0;
+    transition: .5s transform .3s
+}
+
+.checkbox:checked+label svg #heartgroup5 #heart2 {
+    transform: scale(0) translate(-60px, 30px);
+    transform-origin: 0 0 0;
+    transition: 1.5s transform .3s
+}
+
+.checkbox:checked+label svg #heartgroup6 {
+    opacity: 1;
+    transition: .1s all .3s
+}
+
+.checkbox:checked+label svg #heartgroup6 #heart1 {
+    transform: scale(0) translate(-30px, 0px);
+    transform-origin: 0 0 0;
+    transition: .5s transform .3s
+}
+
+.checkbox:checked+label svg #heartgroup6 #heart2 {
+    transform: scale(0) translate(-60px, -5px);
+    transform-origin: 0 0 0;
+    transition: 1.5s transform .3s
+}
+
+.checkbox:checked+label svg #heartgroup7 {
+    opacity: 1;
+    transition: .1s all .3s
+}
+
+.checkbox:checked+label svg #heartgroup7 #heart1 {
+    transform: scale(0) translate(-30px, -15px);
+    transform-origin: 0 0 0;
+    transition: .5s transform .3s
+}
+
+.checkbox:checked+label svg #heartgroup7 #heart2 {
+    transform: scale(0) translate(-55px, -30px);
+    transform-origin: 0 0 0;
+    transition: 1.5s transform .3s
+}
+
+.checkbox:checked+label svg #heartgroup2 {
+    opacity: 1;
+    transition: .1s opacity .3s
+}
+
+.checkbox:checked+label svg #heartgroup3 {
+    opacity: 1;
+    transition: .1s opacity .3s
+}
+
+.checkbox:checked+label svg #heartgroup4 {
+    opacity: 1;
+    transition: .1s opacity .3s
+}
+
+.checkbox:checked+label svg #heartgroup5 {
+    opacity: 1;
+    transition: .1s opacity .3s
+}
+
+.checkbox:checked+label svg #heartgroup6 {
+    opacity: 1;
+    transition: .1s opacity .3s
+}
+
+.checkbox:checked+label svg #heartgroup7 {
+    opacity: 1;
+    transition: .1s opacity .3s
+}
+
+@keyframes animateCircle {
+    40% {
+        transform: scale(10);
+        opacity: 1;
+        fill: #DD4688
+    }
+
+    55% {
+        transform: scale(11);
+        opacity: 1;
+        fill: #D46ABF
+    }
+
+    65% {
+        transform: scale(12);
+        opacity: 1;
+        fill: #CC8EF5
+    }
+
+    75% {
+        transform: scale(13);
+        opacity: 1;
+        fill: transparent;
+        stroke: #CC8EF5;
+        stroke-width: .5
+    }
+
+    85% {
+        transform: scale(17);
+        opacity: 1;
+        fill: transparent;
+        stroke: #CC8EF5;
+        stroke-width: .2
+    }
+
+    95% {
+        transform: scale(18);
+        opacity: 1;
+        fill: transparent;
+        stroke: #CC8EF5;
+        stroke-width: .1
+    }
+
+    100% {
+        transform: scale(19);
+        opacity: 1;
+        fill: transparent;
+        stroke: #CC8EF5;
+        stroke-width: 0
+    }
+}
+
+@keyframes animateHeart {
+    0% {
+        transform: scale(0.2)
+    }
+
+    40% {
+        transform: scale(1.2)
+    }
+
+    100% {
+        transform: scale(1)
+    }
+}
+
+@keyframes animateHeartOut {
+    0% {
+        transform: scale(1.4)
+    }
+
+    100% {
+        transform: scale(1)
+    }
+}
+
+
+
+
